@@ -31,14 +31,14 @@
                             </div>
                             <div class="mb-3">
                                 <label for="description">Description</label>
-                                <textarea name="description" class="form-control" value="{{old('description')}}" placeholder="Enter description"></textarea>
+                                <textarea name="description" class="form-control" placeholder="Enter description">{{old('description')}} </textarea>
                                 @error('description')
                                     <small class="text-danger">{{$message}}</small>
                                 @enderror
                             </div>
                             <div class="mb-3">
                                 <label for="requirements">Requirements</label>
-                                <textarea name="requirements" class="form-control" value="{{old('requirements')}}" placeholder="Enter requirements"></textarea>
+                                <textarea name="requirements" class="form-control" placeholder="Enter requirements">{{old('requirements')}}</textarea>
                                 @error('requirements')
                                     <small class="text-danger">{{$message}}</small>
                                 @enderror

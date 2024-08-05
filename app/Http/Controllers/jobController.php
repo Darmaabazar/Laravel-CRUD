@@ -83,8 +83,9 @@ class jobController extends Controller
             $imageName = time().'.'.$image->extension();
             $image->move('uploads/jobsImages/', $imageName);
             $validateData['image'] = 'uploads/jobsImages/'.$imageName;
-        } else {
-            $validateData['image'] = null;
+        }
+        else{
+            $validateData['image'] = $job->image;
         }
         
         $job->update([
